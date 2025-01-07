@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomodoro Timer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
+        <div class="mode">
+            <button id="modeToggle" class="active">
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
         <h1>Pomodoro Timer</h1>
         <div class="timer">
             <span id="minutes">30</span>:<span id="seconds">00</span>
+        </div>
+        <div class="timer inverse-timer">
+            <span id="inverseMinutes">00</span>:<span id="inverseSeconds">00</span>
         </div>
         <div class="controls">
             <button id="start">Start</button>
             <button id="pause">Pause</button>
             <button id="reset">Reset</button>
         </div>
-        <div class="mode">
-            <button id="modeToggle" class="active">Work</button>
+        <div class="mode-status-container">
             <p id="modeStatus">Time to work!</p>
         </div>
     </div>
