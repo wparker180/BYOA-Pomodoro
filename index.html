@@ -15,6 +15,9 @@
             </button>
         </div>
         <h1>Pomodoro Timer</h1>
+        <div id="focusDisplay" class="focus-display hidden">
+            <p>Focus: <span id="focusText"></span></p>
+        </div>
         <div class="timer">
             <span id="minutes">30</span>:<span id="seconds">00</span>
         </div>
@@ -25,9 +28,20 @@
             <button id="start">Start</button>
             <button id="pause">Pause</button>
             <button id="reset">Reset</button>
+            <button id="addFive" class="hidden">+5 Min</button>
         </div>
         <div class="mode-status-container">
             <p id="modeStatus">Time to work!</p>
+        </div>
+    </div>
+    <div id="focusModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>What are you focusing on?</h2>
+            <input type="text" id="focusInput" placeholder="Enter your focus...">
+            <div class="modal-buttons">
+                <button id="cancelFocus">Cancel</button>
+                <button id="confirmFocus">Start Session</button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
