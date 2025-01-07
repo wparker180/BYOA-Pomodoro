@@ -1,0 +1,69 @@
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #fafafa;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    max-width: 400px;
+    width: 90%;
+}
+
+.timer {
+    font-size: 5rem;
+    font-weight: 600;
+    margin: 2rem 0;
+    color: #2D3748;
+}
+
+.controls button, .mode button {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.controls button {
+    background-color: #2DD4BF;
+    color: white;
+}
+
+.controls button:hover {
+    background-color: #14B8A6;
+    transform: translateY(-1px);
+}
+
+.mode button {
+    background-color: #F1F5F9;
+    color: #475569;
+    margin-top: 1.5rem;
+}
+
+.mode button:hover {
+    background-color: #E2E8F0;
+}
+
+.mode button.active {
+    background-color: #F43F5E;
+    color: white;
+}
+
+#modeStatus {
+    margin-top: 1rem;
+    color: #718096;
+    font-size: 0.9rem;
+    font-weight: 500;
+} 
