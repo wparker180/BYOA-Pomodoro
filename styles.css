@@ -10,7 +10,7 @@ body {
 
 .container {
     text-align: center;
-    background-color: white;
+    background-color: blue;
     padding: 2.5rem;
     border-radius: 16px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
